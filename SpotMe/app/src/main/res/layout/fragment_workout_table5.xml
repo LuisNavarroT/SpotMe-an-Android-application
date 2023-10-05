@@ -1,0 +1,897 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastel_green"
+    tools:context=".WorkoutTable5Fragment" >
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="186dp"
+        android:layout_height="52dp"
+        android:src="@drawable/spot_me_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btnTimer"
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="16dp"
+        android:foreground="@drawable/spot_me_timer"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.160" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/pastel_purple_light"
+        android:padding="10dp"
+        android:text="Day 5"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.160" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="wrap_content"
+        android:layout_height="353dp"
+        android:layout_marginTop="126dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:layout_constraintVertical_bias="0.25">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:id="@+id/trDay1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tvDay5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="295dp"
+                                android:text="Day 5"
+                                android:textColor="@color/pastel_purple"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/etNameDay5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Write Name of day 5"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="12sp" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/trTitles"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/etExercise"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:text="Exercise"
+                                android:textColor="@color/pastel_purple"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/etSets"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:text="Sets"
+                                android:textColor="@color/pastel_purple"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/etReps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:text="Reps"
+                                android:textColor="@color/pastel_purple"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/etWeight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:text="Weight"
+                                android:textColor="@color/pastel_purple"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/etAchieved"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:text="Achieved"
+                                android:textColor="@color/pastel_purple"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/etTips"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:text="Tips"
+                                android:textColor="@color/pastel_purple"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/etExtra"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:inputType="text"
+                                android:text="Extra"
+                                android:textColor="@color/pastel_purple"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/trExercise1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/etExercise1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Name of Exercise"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etSets1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of sets"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etReps1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etWeight1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Weight to be used"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etAchieved1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Number of achieved reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etTips1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Any tip to do exercise?"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etExtra1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Extra"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:id="@+id/trExercise2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/etExercise2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Name of Exercise"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etSets2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of sets"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etReps2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etWeight2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Weight to be used"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etAchieved2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Number of achieved reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etTips2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Any tip to do exercise?"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etExtra2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Extra"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/trExercise3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/etExercise3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Name of Exercise"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etSets3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of sets"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etReps3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etWeight3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Weight to be used"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etAchieved3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Number of achieved reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etTips3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Any tip to do exercise?"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etExtra3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Extra"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:id="@+id/trExercise4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/etExercise4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Name of Exercise"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etSets4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of sets"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etReps4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etWeight4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Weight to be used"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etAchieved4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Number of achieved reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etTips4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Any tip to do exercise?"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etExtra4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Extra"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/trExercise5"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/etExercise5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Name of Exercise"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etSets5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of sets"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etReps5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etWeight5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Weight to be used"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etAchieved5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Number of achieved reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etTips5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Any tip to do exercise?"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etExtra5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Extra"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:id="@+id/trExercise6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/etExercise6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Name of Exercise"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etSets6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of sets"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etReps6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etWeight6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Weight to be used"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etAchieved6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Number of achieved reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etTips6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Any tip to do exercise?"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etExtra6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Extra"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+                        <TableRow
+                            android:id="@+id/trExercise7"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/etExercise7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Name of Exercise"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etSets7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of sets"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etReps7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etWeight7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Weight to be used"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etAchieved7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Number of achieved reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etTips7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Any tip to do exercise?"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etExtra7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Extra"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+
+                        <TableRow
+                            android:id="@+id/trExercise8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <EditText
+                                android:id="@+id/etExercise8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Name of Exercise"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etSets8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of sets"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etReps8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Amount of reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etWeight8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Weight to be used"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etAchieved8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Number of achieved reps"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etTips8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Any tip to do exercise?"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+
+                            <EditText
+                                android:id="@+id/etExtra8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:hint="Extra"
+                                android:inputType="text"
+                                android:textColor="@color/pastel_purple"
+                                android:textColorHint="@color/material_dynamic_neutral20"
+                                android:textSize="10sp" />
+                        </TableRow>
+
+                    </TableLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="183dp"
+        android:layout_height="51dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btnSaveData"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pastel_purple"
+        android:text="Save Changes"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.40" />
+</androidx.constraintlayout.widget.ConstraintLayout>

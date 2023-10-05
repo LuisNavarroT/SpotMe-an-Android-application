@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.luisnavarro.spotme.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_termsFragment"
+            app:destination="@id/termsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.luisnavarro.spotme.MainMenuFragment"
+        android:label="fragment_main_menu"
+        tools:layout="@layout/fragment_main_menu" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_workoutFragment"
+            app:destination="@id/workoutFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_BMRFragment"
+            app:destination="@id/BMRFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_progressFragment"
+            app:destination="@id/progressFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_editFragment"
+            app:destination="@id/editFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newAccountFragment"
+        android:name="com.luisnavarro.spotme.NewAccountFragment"
+        android:label="fragment_new_account"
+        tools:layout="@layout/fragment_new_account" >
+        <action
+            android:id="@+id/action_newAccountFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workoutFragment"
+        android:name="com.luisnavarro.spotme.WorkoutFragment"
+        android:label="fragment_workout"
+        tools:layout="@layout/fragment_workout" >
+        <action
+            android:id="@+id/action_workoutFragment_to_workoutTableFragment"
+            app:destination="@id/workoutTableFragment" />
+        <action
+            android:id="@+id/action_workoutFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+        <action
+            android:id="@+id/action_workoutFragment_to_workoutTable2Fragment"
+            app:destination="@id/workoutTable2Fragment" />
+        <action
+            android:id="@+id/action_workoutFragment_to_workoutTable3Fragment"
+            app:destination="@id/workoutTable3Fragment" />
+        <action
+            android:id="@+id/action_workoutFragment_to_workoutTable5Fragment"
+            app:destination="@id/workoutTable5Fragment" />
+        <action
+            android:id="@+id/action_workoutFragment_to_workoutTable4Fragment"
+            app:destination="@id/workoutTable4Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BMRFragment"
+        android:name="com.luisnavarro.spotme.BMRFragment"
+        android:label="fragment_b_m_r"
+        tools:layout="@layout/fragment_b_m_r" >
+        <action
+            android:id="@+id/action_BMRFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/progressFragment"
+        android:name="com.luisnavarro.spotme.ProgressFragment"
+        android:label="fragment_progress"
+        tools:layout="@layout/fragment_progress" >
+        <action
+            android:id="@+id/action_progressFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.luisnavarro.spotme.EditFragment"
+        android:label="fragment_edit"
+        tools:layout="@layout/fragment_edit" >
+        <action
+            android:id="@+id/action_editFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_editFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workoutTableFragment"
+        android:name="com.luisnavarro.spotme.WorkoutTableFragment"
+        android:label="fragment_workout_table"
+        tools:layout="@layout/fragment_workout_table" >
+        <action
+            android:id="@+id/action_workoutTableFragment_to_stopWatchFragment"
+            app:destination="@id/stopWatchFragment" />
+        <action
+            android:id="@+id/action_workoutTableFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stopWatchFragment"
+        android:name="com.luisnavarro.spotme.StopWatchFragment"
+        android:label="fragment_stop_watch"
+        tools:layout="@layout/fragment_stop_watch" >
+        <action
+            android:id="@+id/action_stopWatchFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/termsFragment"
+        android:name="com.luisnavarro.spotme.TermsFragment"
+        android:label="fragment_terms"
+        tools:layout="@layout/fragment_terms" >
+        <action
+            android:id="@+id/action_termsFragment_to_newAccountFragment"
+            app:destination="@id/newAccountFragment" />
+        <action
+            android:id="@+id/action_termsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workoutTable2Fragment"
+        android:name="com.luisnavarro.spotme.WorkoutTable2Fragment"
+        android:label="fragment_workout_table2"
+        tools:layout="@layout/fragment_workout_table2" >
+        <action
+            android:id="@+id/action_workoutTable2Fragment_to_stopWatchFragment"
+            app:destination="@id/stopWatchFragment" />
+        <action
+            android:id="@+id/action_workoutTable2Fragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workoutTable3Fragment"
+        android:name="com.luisnavarro.spotme.WorkoutTable3Fragment"
+        android:label="fragment_workout_table3"
+        tools:layout="@layout/fragment_workout_table3" >
+        <action
+            android:id="@+id/action_workoutTable3Fragment_to_stopWatchFragment"
+            app:destination="@id/stopWatchFragment" />
+        <action
+            android:id="@+id/action_workoutTable3Fragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workoutTable4Fragment"
+        android:name="com.luisnavarro.spotme.WorkoutTable4Fragment"
+        android:label="fragment_workout_table4"
+        tools:layout="@layout/fragment_workout_table4" >
+        <action
+            android:id="@+id/action_workoutTable4Fragment_to_stopWatchFragment"
+            app:destination="@id/stopWatchFragment" />
+        <action
+            android:id="@+id/action_workoutTable4Fragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/workoutTable5Fragment"
+        android:name="com.luisnavarro.spotme.WorkoutTable5Fragment"
+        android:label="fragment_workout_table5"
+        tools:layout="@layout/fragment_workout_table5" >
+        <action
+            android:id="@+id/action_workoutTable5Fragment_to_stopWatchFragment"
+            app:destination="@id/stopWatchFragment" />
+        <action
+            android:id="@+id/action_workoutTable5Fragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+</navigation>

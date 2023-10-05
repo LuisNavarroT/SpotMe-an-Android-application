@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pastel_green"
+    tools:context=".TermsFragment">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="186dp"
+        android:layout_height="52dp"
+        android:src="@drawable/spot_me_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/pastel_purple_light"
+        android:padding="10dp"
+        android:text="Terms and conditions"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/svTerms"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <ScrollView
+        android:id="@+id/svTerms"
+        android:layout_width="384dp"
+        android:layout_height="376dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintVertical_bias="0.3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTermsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SpotMe App - Terms and Conditions"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome to SpotMe! These Terms and Conditions (&quot;Terms&quot;) govern your use of the SpotMe mobile application (&quot;App&quot;). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the App."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Acceptance of Terms"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your use of the App constitutes your acceptance of these Terms, and you acknowledge that you have read and understood them. These Terms may be updated or modified from time to time, and it is your responsibility to review them periodically."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. Eligibility"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You must be at least 18 years old or have reached the age of majority in your jurisdiction to use the App. By using the App, you represent and warrant that you meet these eligibility requirements."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. Account Registration"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In order to use certain features of the App, you may be required to create an account. You agree to provide accurate and complete information during the registration process and to keep your account information up to date."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. Privacy Policy"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your privacy is important to us. We collect, use, and share your personal information in accordance with our Privacy Policy, which is incorporated by reference into these Terms. By using the App, you consent to the practices described in the Privacy Policy."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. User Content"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By using the App, you may submit or share content, including but not limited to workout data, images, and comments (‘User Content’). You retain ownership of your User Content, but you grant us a worldwide, non-exclusive, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, modify, display, and perform your User Content in connection with the App."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6. Use of the App"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You agree not to use the App for any unlawful, abusive, harassing, defamatory, harmful, or otherwise objectionable purposes. You further agree not to interfere with or disrupt the operation of the App or its associated networks."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7. Disclaimer of Warranties"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The App is provided on an 'as is' and 'as available' basis without warranties of any kind. We disclaim all warranties, whether express, implied, or statutory, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8. Limitation of Liability"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To the extent permitted by applicable law, we shall not be liable for any indirect, incidental, special, or consequential damages arising from or in connection with the use of the App."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9. Indemnification"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You agree to indemnify and hold harmless the Company, its officers, directors, employees, and agents from and against any claims, damages, liabilities, losses, costs, or expenses, including attorney's fees, arising from your use of the App or violation of these Terms."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10. Termination"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We reserve the right to suspend or terminate your access to the App at any time for any reason, without prior notice."
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11. Governing Law"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="These Terms shall be governed by and construed in accordance with the laws of the European Union"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTermsT12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12. Severability"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTerms12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If any provision of these Terms is held to be invalid or unenforceable, such provision shall be struck, and the remaining provisions shall be enforced to the fullest extent under the law"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAccept"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pastel_purple"
+        android:text="Accept"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="183dp"
+        android:layout_height="51dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
